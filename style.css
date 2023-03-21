@@ -1,0 +1,183 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Press+Start+2P&display=swap');
+
+/* 
+
+font-family: 'Alata', sans-serif;
+font-family: 'Press Start 2P', cursive;
+
+*/
+
+/* ----- Reset ----- */
+* {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   border: none;
+   outline: none;
+   font-weight: 400;
+   box-sizing: border-box;
+   font-family: 'sarala' sans-serif;
+   }
+   
+   body {
+      background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgb(6, 13, 80) 0%, rgb(30, 30, 158) 35%, rgb(133, 153, 253) 100%);
+   }
+    
+   a {
+   text-decoration: none;
+   }
+   
+   ul {
+   list-style: none;
+   }
+   
+   img {
+   max-width: 100%;
+   }
+
+   /* Estilização inicial */ 
+
+   header {
+      background: rgba(0, 0, 0, 0.24);
+      border-radius: 15px;
+      height: 17vh;
+      width: 100%;
+   }
+
+   .titulo {
+      transition: 0.5s ease-in-out; /* Pra esse efeito funcionar precisa vir na classe sem o hover. No hover você põe a cor do efeito */
+      text-shadow: 3px 7px 10px rgba(0, 0, 0, 0.897);
+      font-family: 'Press Start 2P', cursive;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.3em;
+      color: orange;
+      display: flex;
+      padding: 1rem;
+   }
+
+   .titulo:hover {
+      color: rgb(133, 86, 1);
+   }
+
+
+   .descricao-titulo {
+      font-style: italic;
+      font-weight: bold;
+      margin-left: 5px;
+      color: #f5f5f5;
+      font-size: 1.2em;
+      padding: 1em;
+      float: left;
+   }
+
+   #dark {
+      transition: 0.3s ease-in-out;
+      margin-right: 6px;
+      cursor: pointer;
+      padding: 1em;
+      float: right;
+      width: 50px;
+   }
+
+   #dark:hover {
+      background: rgba(255, 255, 255, 0.637);
+      border-radius: 15px;
+   }
+
+   #fullscreen {
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-top: 2px;
+      padding: 1em;
+      float: right;
+      width: 45px;
+   }
+
+   #fullscreen:hover {
+      background: rgba(255, 255, 255, 0.589);
+      border-radius: 15px;
+   }
+
+   .hora {
+      font-family: 'Alata', sans-serif;
+      text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+      justify-content: center;
+      font-style: italic;
+      font-weight: bold;
+      padding-top: 20px;
+      color: orange;
+      font-size: 20px;
+      display: flex;
+      width: 100vw;
+   }
+
+   .principal {
+      background: rgba(41, 40, 40, 0.212);
+      border-radius: 20px;
+      margin-top: 5px;
+      height: 37vh;
+   }
+
+   /* Estilização do relógio */
+
+ #clock {
+   text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+   font-family: 'Press Start 2P', cursive;
+   justify-content: center;
+   margin-top: 1em;
+   color: orange;
+   font-size: 2em;
+   display: flex;
+ }
+
+ #date {
+   text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+   font-family: 'Press Start 2P', cursive;
+   justify-content: center;
+   margin-top: 1em;
+   color: orange;
+   font-size: 1.2em;
+   display: flex;
+ }
+
+/* ------------ Mobile ---------------- */
+
+ @media screen and (max-width: 1024px) and (max-height:1024px) {
+   .titulo {
+      font-size: 3vh;
+   }
+
+   .descricao-titulo {
+      font-size: 1rem;
+   }
+
+   #fullscreen {
+      display: none;
+   }
+
+   #clock {
+      font-size: 1em;
+      text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+    }
+   
+    #date {
+      font-size: 1rem;
+      text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+    }
+
+    .hora {
+      font-size: 1rem;
+      padding-top: 8vh;
+      text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.781);
+      color: rgb(255, 255, 255);
+    }
+ }
+
+
+
+  
